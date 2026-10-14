@@ -1,4 +1,4 @@
-# Assignment #4 — Forms and Validation
+# Assignment 4
 
 **Name:** Ilya Koval
 **Group:** SE-2539
@@ -21,12 +21,10 @@ All of the fields have their corresponding `<label>` elements.
 
 Added some built-in HTML5 validation with attributes such as
 `required` to prevent submission of empty fields,
-`type="email"` — browser enforces correct email format,
+`type="email"` - browser enforces correct email format,
 `minlength="10"` and `maxlength="100"` for the textarea.
 
-**Screenshot — Basic HTML Form:**
-
-![Basic HTML Form](s1.webp)
+![Basic HTML Form](screenshots/s1.webp)
 
 ---
 
@@ -46,19 +44,8 @@ Used Bootstrap's validation styles to display errors and successes.
 Added `novalidate` attribute to the form to prevent default browser validation, then used JavaScript to add
 `was-validated` class on submit. Placed `invalid-feedback` and `valid-feedback` divs below each of the fields. The script also prevents the default form submission with `e.preventDefault()`.
 
-Some of the validation messages:
-```
-"Please enter your email."
-"Looks good!"
-```
-
-**Screenshot — Bootstrap Form (invalid state):**
-
-![Bootstrap Form Invalid](s2.webp)
-
-**Screenshot — Bootstrap Form (valid state):**
-
-![Bootstrap Form Valid](s3.webp)
+![Bootstrap Form Invalid](screenshots/s2.webp)
+![Bootstrap Form Valid](screenshots/s3.webp)
 
 ---
 
@@ -80,9 +67,7 @@ For validation, used HTML5 attributes `required`, `type="email"`, `minlength="8"
 
 Checked if the values of the password and confirmation fields matched with `setCustomValidity()`. For gender, since there is no built-in validation for radio buttons in Bootstrap, had to write a little custom JavaScript that would display an error message if none of the options was selected. And finally, added a click event listener to the reset button to remove the `was-validated` class when the button is clicked.
 
-**Screenshot — Registration Form (valid state):**
-
-![Registration Form](s4.webp)
+![Registration Form](screenshots/s4.webp)
 
 ---
 
